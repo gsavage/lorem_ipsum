@@ -1,17 +1,25 @@
 Lorem Ipsum Generator
+=====================
 
-*Comatose* is a micro CMS designed for being embedded into existing Rails 
-applications.
+Install the plugin using the usual
 
-It's intended for simple CMS support. Comatose supports 
+script/plugin install git://github.com/gsavage/lorem_ipsum.git
 
- * Nested pages
- * Versioning
- * Page markup in Textile, Markdown, RDoc, or easily add your own 
- * Page processing through Liquid or ERb
- * Generators for easy installation/migration
- * Completely self-contained within plugin folder
+Using the generator:
 
-It's meant to be lean, mean, easily embedded, and easy to re-skin for 
-existing applications. If you need something more, I would recommend 
-looking into Radiant.
+script/generate lorem_ipsum
+
+That will add a file to your lib directory, and to app/helpers
+
+To use the helper:
+
+<%= lorem_ipsum %>  (Generates a chunk of it as raw text with \n line breaks)
+
+<%= lorem_ipsum(25) %>  (Generates approximate number of bytes of it as raw text with \n line breaks)
+
+<%= lorem_ipsum(25, "<br/>") %>   (Generates approximate number of bytes of it as raw text with \n line breaks converted to <br/>)
+
+
+It's rough and ready.
+
+Lorem Ipsum extract taken from http://www.lipsum.com/ courtesy of James Wilson

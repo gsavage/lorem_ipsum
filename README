@@ -1,0 +1,17 @@
+Lorem Ipsum Generator
+
+*Comatose* is a micro CMS designed for being embedded into existing Rails 
+applications.
+
+It's intended for simple CMS support. Comatose supports 
+
+ * Nested pages
+ * Versioning
+ * Page markup in Textile, Markdown, RDoc, or easily add your own 
+ * Page processing through Liquid or ERb
+ * Generators for easy installation/migration
+ * Completely self-contained within plugin folder
+
+It's meant to be lean, mean, easily embedded, and easy to re-skin for 
+existing applications. If you need something more, I would recommend 
+looking into Radiant.
